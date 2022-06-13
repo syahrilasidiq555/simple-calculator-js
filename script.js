@@ -9,6 +9,15 @@ let calculationOperator = '';
 let currentNumber = '0';
 
 
+// add function for percentage
+const percentage = document.querySelector(".percentage");
+
+percentage.addEventListener("click", ()=> {
+    result = currentNumber / 100;
+    updateScreen(result);
+})
+
+
 const inputNumber = (number) => {
     // currentNumber += number;
     if (currentNumber === '0') {
